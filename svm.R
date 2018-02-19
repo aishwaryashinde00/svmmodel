@@ -1,13 +1,11 @@
 library(e1071)
 library("caret")
 library("caTools")
-setwd("~/")
+
 cancerData <- read.csv("wisc_bc_data.csv") 
 
 head(cancerData)
 str(cancerData)
-
-
 
 cancerData$group <- factor(cancerData$diagnosis)
 cancerData$group
